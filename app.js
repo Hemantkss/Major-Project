@@ -17,7 +17,7 @@ const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
 const {isLoggedIn} = require("./middleware.js");
 
-//PASSPORT REQUIRE AND AUTHORIZATION
+//PASSPORT REQUIRE & AUTHORIZATION
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user.js");

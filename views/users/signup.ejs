@@ -1,0 +1,51 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <h2 class="col-6 offset-3">SignUp on WanderLust</h2>
+    <div class="col-6 offset-3">
+        
+        <form action="/signup" method="POST" class="needs-validation" novalidate>
+               
+            <div class="md-3 mt-3">
+                <label for="username" class="form-label">Username</label> <br>
+                <input type="text" 
+                    placeholder="Enter Username" 
+                    name="username"
+                    id="username" 
+                    class="form-control"
+                    required />
+     
+                    <div class="valid-feedback">Username looks Good!</div>
+                    
+            </div>
+
+            <div class="md-3 mt-3">
+                <label for="email" class="form-label">Email</label> <br>
+                <input type="text" 
+                    placeholder="Enter Email" 
+                    name="email"
+                    id="email" 
+                    class="form-control"
+                    required />
+     
+                    <!-- <div class="valid-feedback">Email looks Good!</div> -->
+                    
+            </div>
+
+            <div class="md-3 mt-3">
+                <label for="password" class="form-label">Password</label> <br>
+                <input type="password" 
+                    placeholder="Enter Password" 
+                    name="password"
+                    id="password" 
+                    class="form-control"
+                    required />
+     
+                    <div class="valid-feedback">Password looks Good!</div>
+                    
+            </div>
+
+             <button type="submit" class="btn btn-success mt-3">SignUp</button>
+        </form>
+    </div>
+</div>        
